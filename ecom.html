@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="ecome.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="mainImage" src="suitcase1.jpg" alt="Suitcase">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Premium Travel Suitcase</h1>
+            <p class="product-price">3000$</p>
+            <p class="product-description">
+                This premium suitcase is perfect for all your travel needs. It is durable, spacious, and stylish.
+            </p>
+            <div class="product-colors">
+                <p>Select Color:</p>
+                <div class="color-option" style="background-color: black;" onclick="changeImage('../images/black.webp')"></div>
+                <div class="color-option" style="background-color: blue;" onclick="changeImage('../images/blue2.webp')"></div>
+                <div class="color-option" style="background-color: red;" onclick="changeImage('../images/red1.webp')"></div>
+            </div>
+            <button class="addtocart">Add to Cart</button>
+        </div>
+    </div>
+    <script>
+
+        function changeImage(imageSrc) {
+    document.getElementById('mainImage').src = imageSrc;}
+        
+    </script>
+</body>
+</html>
